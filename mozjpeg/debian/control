@@ -1,0 +1,30 @@
+Source: mozjpeg
+Priority: optional
+Maintainer: Yoshimasa Hashida <yoshimasa.hashida@link-u.co.jp>
+Build-Depends: debhelper (>= 10), autotools-dev, libtool, autoconf, 
+ automake, nasm, pkg-config,
+ libpng-dev, libtiff-dev
+Standards-Version: 4.1.3
+Section: libs
+Homepage: https://github.com/mozilla/mozjpeg
+
+Package: libmozjpeg-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: libmozjpeg62 (= ${binary:Version}), ${misc:Depends}
+Description: mozjpeg is a fork from libjpeg-turbo.
+
+Package: libmozjpeg62
+Section: libs
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: mozjpeg is a fork from libjpeg-turbo.
+
+Package: mozjpeg
+Section: graphics
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: mozjpeg is a fork from libjpeg-turbo.
