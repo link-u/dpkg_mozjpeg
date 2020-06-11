@@ -28,3 +28,5 @@ Section: graphics
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: mozjpeg is a fork from libjpeg-turbo.
+Conflicts: libjpeg-turbo-progs, libjpeg-progs, libjpeg-turbo-test
+
