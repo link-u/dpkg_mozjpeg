@@ -1,0 +1,13 @@
+.idea
+*.o
+*.dsc
+*.deb
+*.buildinfo
+*.ddeb
+
+mozjpeg/debian/changelog
+mozjpeg/mozjpeg-*
+!mozjpeg/mozjpeg-*.tar.gz
+mozjpeg/mozjpeg_*.debian.tar.xz
+mozjpeg/mozjpeg_*_amd64.changes
+mozjpeg/mozjpeg_*.orig.tar.xz
