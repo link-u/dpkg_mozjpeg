@@ -15,8 +15,8 @@ which djpeg
 cjpeg -version
 djpeg -version
 
-cjpeg -version | grep -i "mozjpeg"
-djpeg -version | grep -i "mozjpeg"
+cjpeg -version 2>&1 | grep -io mozjpeg
+djpeg -version 2>&1 | grep -io mozjpeg
 
 ldd $(which cjpeg)
 ldd $(which djpeg)
